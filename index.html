@@ -1,7 +1,65 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c1d1b"><meta name="description" content="강한 성검, 약한 몸. 주변의 사물을 이용해 제한된 공격으로 숲을 돌파하는 2D 퍼즐 액션 게임."><title>성검을 얻었는데 몸이 약하다</title><link rel="icon" href="assets/favicon.svg"><link rel="preload" href="assets/fonts/NeoDunggeunmoPro-Regular.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="styles.css"><script src="site-config.js" defer></script><script src="app.js" defer></script></head>
-<body><a class="skip" href="#about">본문으로 이동</a><header><a class="brand" href="#home" aria-label="성검을 얻었는데 몸이 약하다, 처음으로"><img src="assets/art/title.webp" alt="성검을 얻었는데 몸이 약하다"></a><nav aria-label="주 메뉴"><a href="#about">상호작용</a><a href="#team">만든 사람들</a><a class="nav-download" href="#demo">다운로드</a></nav></header>
-<main><section class="hero" id="home"><div class="hero-content"><h1><span class="sr-only">성검을 얻었는데 몸이 약하다</span><img src="assets/art/title.webp" alt="" width="1200" height="672" fetchpriority="high"></h1><p class="hero-copy">적은 공격 횟수로 주변 기믹을 이용하여<br><span>스테이지 내 모든 몬스터를 처치해야 하는 게임</span></p><p class="game-tag">2D 퍼즐 액션 플랫포머 <span>·</span> PC</p></div><a class="altar" href="#demo" aria-label="데모 플레이, 다운로드 영역으로 이동"><img src="assets/art/sword-stone.webp" alt="" aria-hidden="true"><span class="altar-menu"><strong>데모 플레이</strong></span></a><div class="motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><a class="scroll" href="#about" aria-label="게임 소개로 이동">↓</a></section>
-<section class="about wrap" id="about"><h2>환경 요소</h2><p class="intro">통나무, 벌집, 거대 버섯을 이용해 몬스터를 처치합니다</p><div class="objects"><article><div class="sprite log" role="img" aria-label="통나무"></div><h3>통나무</h3><p>밧줄을 끊으면 떨어진 뒤 굴러가 몬스터나 다른 기믹에 부딪힙니다.</p></article><article><div class="sprite hive" role="img" aria-label="벌집"></div><h3>벌집</h3><p>밧줄을 끊으면 아래로 떨어져 폭발하고 주변 몬스터를 처치합니다.</p></article><article><div class="sprite mushroom" role="img" aria-label="거대 버섯"></div><h3>거대 버섯</h3><p>닿는 위치에 따라 적과 기믹을 세 방향으로 튕깁니다.</p></article></div></section>
-<section class="team wrap" id="team"><div class="team-heading"><div><p class="eyebrow">UPTRAND</p><h2>만든 사람들</h2></div></div><div class="departments"><article class="department planning"><div class="department-title"><span>GAME DESIGN</span><h3>기획</h3></div><ul><li><strong>김주안</strong><span>기획 · 팀장</span></li><li><strong>김희경</strong><span>스테이지 설계</span></li><li><strong>김여준</strong><span>스테이지 설계</span></li></ul></article><article class="department art"><div class="department-title"><span>ART & ANIMATION</span><h3>아트</h3></div><ul><li><strong>조하늘</strong><span>캐릭터 애니메이션</span></li><li><strong>이정우</strong><span>원화 · 도트 아트</span></li></ul></article><article class="department programming"><div class="department-title"><span>PROGRAMMING</span><h3>프로그래밍</h3></div><ul><li><strong>조예린</strong><span>시스템 · 프로그래밍</span></li></ul></article></div></section>
-<section class="download wrap" id="demo"><div><p class="eyebrow">PC</p><h2>데모 다운로드</h2></div><div class="download-action"><a class="button" href="#demo" data-demo-link>플레이 데모 다운로드 ↓</a><p id="demo-status">PC 데모 · 준비 중</p></div></section></main><footer class="wrap"><span>UPTRAND · 성검을 얻었는데 몸이 약하다</span><a href="#home">맨 위로 ↑</a></footer><div id="notice" role="status" hidden>죄송합니다. 현재 데모는 추가 예정입니다.</div></body></html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102820">
+  <meta name="description" content="성검을 얻었는데 몸이 약하다. 정해진 베기 횟수 안에 숲을 돌파하는 PC 퍼즐 액션. 게임 소개와 플레이 가이드, PC 데모 정보를 확인하세요.">
+  <title>성검을 얻었는데 몸이 약하다 | UPTRAND</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body id="home">
+<a class="skip" href="#about">본문으로 이동</a>
+<header class="mast"><div class="mast-inner">
+  <a class="brand-logo" href="#home" aria-label="성검을 얻었는데 몸이 약하다, 처음으로"><img src="assets/game/game-logo.webp" alt="성검을 얻었는데 몸이 약하다"></a>
+  <nav aria-label="주 메뉴"><a href="#about">게임 소개</a><a href="#guide">플레이 가이드</a><a href="#team">제작진</a></nav>
+  <a class="nav-download" data-download href="#demo">다운로드 <span aria-hidden="true">↓</span></a>
+</div></header>
+<main>
+  <section class="hero" aria-labelledby="title">
+    <img class="forest" src="assets/game/forest-title.webp" alt="" fetchpriority="high">
+    <div class="leaves" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="hero-inner">
+      <div class="cover">
+        <div class="genre"><i aria-hidden="true"></i> PC <b> / </b> PUZZLE ACTION</div>
+        <h1 id="title"><img src="assets/game/game-logo.webp" alt="성검을 얻었는데 몸이 약하다"></h1>
+        <p>강한 성검을 얻은 약한 용사의<br>숲속 퍼즐 액션 플랫포머.</p>
+        <div class="hero-actions"><a class="gold-button" href="#about">게임 살펴보기 <span aria-hidden="true">↓</span></a><a class="demo-shortcut" href="#guide">플레이 가이드</a></div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="chapter">
+    <div class="container">
+      <div class="intro-layout">
+        <div><p class="eyebrow"><i></i> THE GAME</p><h2>성검을 휘두를 힘은<br>단 몇 번뿐.</h2>
+          <p class="summary">숲의 여덟 스테이지에는 저마다 다른 지형과 적이 기다립니다. 주어진 베기 횟수 안에 모든 적을 쓰러뜨려야 합니다.</p>
+        </div>
+        <figure class="still"><img src="assets/game/forest-detail.webp" width="464" height="214" alt="숲 입구의 풀밭에 성검을 든 주인공이 서 있다" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="guide" class="guide"><div class="container split">
+    <div><p class="eyebrow"><i></i> PLAYER GUIDE</p><h2>플레이 가이드</h2><p class="guide-copy">오른손은 방향키에, 왼손은 Z와 X에.</p></div>
+    <div><dl class="controls">
+      <div><dt>좌우 이동</dt><dd><kbd>←</kbd><kbd>→</kbd></dd></div>
+      <div><dt>점프</dt><dd><kbd>Z</kbd></dd></div>
+      <div><dt>베기</dt><dd><kbd>X</kbd></dd></div>
+      <div><dt>위로 베기</dt><dd><kbd>↑</kbd> + <kbd>X</kbd></dd></div>
+      <div><dt>아래로 베기</dt><dd><kbd>↓</kbd> + <kbd>X</kbd></dd></div>
+      <div><dt>다시 시작</dt><dd><kbd>R</kbd></dd></div>
+      <div><dt>힌트 보기 <small>안내 표시 시</small></dt><dd><kbd>H</kbd></dd></div>
+      <div><dt>일시정지</dt><dd><kbd>Esc</kbd></dd></div>
+    </dl><details><summary>게임 언어 변경 <span>Language settings</span></summary><ul class="langs"><li>설정에서 언어를 바꿀 수 있어요.</li><li lang="en">Change the language in Settings.</li><li lang="ja">「設定」で言語を変更できます。</li><li lang="zh-Hans">可在“设置”中更改语言。</li><li lang="zh-Hant">可在「設定」中變更語言。</li><li lang="es">Cambia el idioma en Opciones.</li></ul></details></div>
+  </div></section>
+  <section id="team" class="team"><div class="container"><p class="eyebrow"><i></i> UPTRAND</p><h2>만든 사람들</h2><div class="credits">
+    <div><h3>기획</h3><p><b>김주안</b> 기획 · 팀장</p><p><b>김희경</b> 스테이지 설계</p><p><b>김여준</b> 스테이지 설계</p></div>
+    <div><h3>아트</h3><p><b>조하늘</b> 캐릭터 애니메이션</p><p><b>이정우</b> 원화 · 도트 아트</p></div>
+    <div><h3>프로그래밍</h3><p><b>조예린</b> 시스템 · 프로그래밍</p></div>
+  </div></div></section>
+  <section id="demo" class="demo"><div class="container"><h2>PC 데모</h2><span id="demo-status">다운로드 준비 중</span><a id="demo-link" class="gold-button" hidden>데모 다운로드 ↗</a></div></section>
+</main>
+<footer><div class="container"><span class="wordmark">UPTRAND</span><a href="#home">맨 위로 ↑</a></div></footer>
+</body></html>
